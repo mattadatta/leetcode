@@ -22,9 +22,6 @@ def add_two_numbers(l1, l2):
         current.next = node
         current = node
     
-    if not head:
-        head = l1 or l2
-    
     return head
 
 class Solution(object):
