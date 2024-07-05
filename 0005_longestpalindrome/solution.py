@@ -45,6 +45,6 @@ class Solution(object):
 
 
 sol = Solution()
-s = "hello"
+s = "a coolrisetovotesir to you too"
 result = sol.longestPalindrome(s)
 print(result)
