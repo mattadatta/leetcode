@@ -8,12 +8,11 @@ class Solution(object):
         for log in logs:
             if log == "./":
                 continue
+            elif log == "../":
+                if count > 0:
+                    count -= 1
             else:
-                if log == "../":
-                    if count > 0:
-                        count -= 1
-                else:
-                    count += 1
+                count += 1
         return count
 
 
