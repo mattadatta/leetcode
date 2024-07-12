@@ -6,14 +6,15 @@ operations = {
     "*": operator.mul,
     "/": operator.truediv
 }
+
+operators_list = {"+", "-", "*", "/"}
     
 def eval_rpn(tokens):
     stack = []
     lhand_operand = None
     rhand_operand = None
-    operators_list = {"+", "-", "*", "/"}
     for c in tokens:
-        if c not in operators_list :
+        if c not in operators_list:
             if lhand_operand != None:
                 stack.append(lhand_operand)
             lhand_operand = rhand_operand
